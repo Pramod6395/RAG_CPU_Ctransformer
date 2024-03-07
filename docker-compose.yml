@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  streamlit:
+    image: streamlit
+    ports:
+      - "8501-8503:8501"
+    volumes:
+      - /path_to/RAG_TGI:/app/
+    deploy:
+      replicas: 3
+
